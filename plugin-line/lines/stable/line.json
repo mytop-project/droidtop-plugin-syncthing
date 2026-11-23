@@ -1,6 +1,6 @@
 {
   "upstream": {
-    "repo": "Droidtop/droidtop-plugin-syncthing",
+    "repo": "mytop-project/droidtop-plugin-syncthing",
     "ref": "creation",
     "commit": "3cc0d6ce0215df2f281f662a1e9e0abcbbd175fb"
   },

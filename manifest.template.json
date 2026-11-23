@@ -4,7 +4,7 @@
   "label": "Syncthing",
   "summary": "Keeps folders in step across your devices, paired through droidtop",
   "publisher": "droidtop",
-  "homepage": "https://github.com/Droidtop/droidtop-plugin-syncthing",
+  "homepage": "https://github.com/mytop-project/droidtop-plugin-syncthing",
   "category": "tools",
   "description": "A full Syncthing that syncs folders with the computers and handhelds you paired with droidtop, with no pairing of its own, and with any other Syncthing you add: trusted, or untrusted for an encrypted backup.",
   "version": "1.2.0",

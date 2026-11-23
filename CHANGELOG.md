@@ -8,12 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- "Sync only while charging" reads droidtop's battery state (`power.get_state`, permission `power.state`) instead of the kernel's power supply files, so it works where those are hidden, and sync also waits while Battery Saver is on and nothing charges (Droidtop/tracker#762).
+- "Sync only while charging" reads droidtop's battery state (`power.get_state`, permission `power.state`) instead of the kernel's power supply files, so it works where those are hidden, and sync also waits while Battery Saver is on and nothing charges (mytop-project/tracker#762).
 
 ## 1.2.0
 
 ### Added
-- A folder anywhere on shared storage, synced in place (Droidtop/tracker#553): "Add a folder" takes "Folder on this
+- A folder anywhere on shared storage, synced in place (mytop-project/tracker#553): "Add a folder" takes "Folder on this
   device", such as `/storage/emulated/0/Saves` or a folder on the SD card. The plugin asks for `files.shared.write`
   (optional), and droidtop's broker opens exactly what that grant covers to Syncthing's process, never `Android/data`
   or `Android/obb`. With no folder given, it is kept in the plugin's own storage as before.
@@ -22,7 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 - Facets instead of droidtop views (contract 3, `ui.facets` on `plugin.page`, `settings.page` and `quickmenu`,
-  Droidtop/tracker#602). "Add a folder" and "Add a Syncthing device" are form groups, sent as one call each. A
+  mytop-project/tracker#602). "Add a folder" and "Add a Syncthing device" are form groups, sent as one call each. A
   folder's encryption password is a `secret` shown on droidtop's own sheet instead of in a message line. The paired
   devices group asks for `devices.paired` in place (a grant action). The Quick Menu shows whether Syncthing is syncing,
   with "Look for changes now". Needs a droidtop with the facet additions of 2026-10-29.

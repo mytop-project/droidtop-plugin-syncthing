@@ -17,7 +17,7 @@ import kotlin.concurrent.withLock
 import org.json.JSONObject
 
 /**
- * droidtop's Syncthing (Droidtop/tracker#553): a full upstream Syncthing that keeps droidtop instances, droidtop-agent
+ * droidtop's Syncthing (mytop-project/tracker#553): a full upstream Syncthing that keeps droidtop instances, droidtop-agent
  * and Pythia in step, paired through droidtop's own device pairing, and can also sync with any other Syncthing the
  * person adds, trusted or untrusted (an encrypted copy, for backups).
  *

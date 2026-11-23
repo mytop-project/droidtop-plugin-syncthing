@@ -11,7 +11,7 @@ import org.json.JSONObject
  * droidtop's side of the one Syncthing this plugin process runs (README.md, "How it fits together"): where it lives,
  * its identity in the vault, when it may run (the person's Wi-Fi and charging choices), and which devices it accepts.
  *
- * Pairing is droidtop's (docs/plugin-api.md D21, Droidtop/tracker#553): this device announces its Syncthing ID and
+ * Pairing is droidtop's (docs/plugin-api.md D21, mytop-project/tracker#553): this device announces its Syncthing ID and
  * LAN addresses to every device the person paired with droidtop (`devices.announce`), reads what the same plugin
  * announced on each of them (`devices.list_paired`), and accepts exactly those IDs, with their folders accepted
  * automatically. Syncthing's own pairing is never shown. Other Syncthing devices are the person's to add by ID, trusted
@@ -125,7 +125,7 @@ internal class SyncthingEngine(private val context: PluginContext) {
 
     /**
      * droidtop's `power.get_state` (docs/plugin-api.md D7, permission `power.state`), from Android's battery broadcast
-     * and Battery Saver (Droidtop/tracker#762: this used to read /sys/class/power_supply, which a contained plugin may
+     * and Battery Saver (mytop-project/tracker#762: this used to read /sys/class/power_supply, which a contained plugin may
      * not see). Null only when droidtop does not answer, and then nothing waits on it.
      */
     fun power(): Power? = runCatching { host("power", "get_state") }.getOrNull()

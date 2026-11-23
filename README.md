@@ -4,7 +4,7 @@ droidtop's Syncthing (`droidtop.syncthing`): a full, upstream [Syncthing](https:
 two droidtop handhelds, or a handheld and droidtop-agent or Pythia on a computer, keep folders in step. It pairs
 through droidtop's own device pairing, so Syncthing's pairing is never shown, and it can also sync with any other
 Syncthing the person adds: a trusted one (an existing library), or an untrusted one that keeps only an encrypted copy
-(a backup). Decided in Droidtop/tracker#553.
+(a backup). Decided in mytop-project/tracker#553.
 
 ## How it fits together
 
@@ -84,7 +84,7 @@ it a plugin, we have a branch for the actual core code, and releases are a blend
   changelog) and each line's pin in `plugin-line/lines/<line>/line.json`.
 - **`creation`**: the core code and its tests.
 - **`plugin/stable`**: `creation` at the pinned commit with `plugin-core` written over it, composed by
-  Droidtop/droidtop-platforms `tools/plugin_line.py` and checked by `plugin-line.yml`. The bundle and releases
+  mytop-project/droidtop-platforms `tools/plugin_line.py` and checked by `plugin-line.yml`. The bundle and releases
   are built from it; nothing is authored there.
 
 Every change lands on `creation` or `plugin-core` through a `ci/` branch, and the line is recomposed. There is no
